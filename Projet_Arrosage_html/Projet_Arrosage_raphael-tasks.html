@@ -1,33 +1,146 @@
 <html xmlns:ganttproject="http://ganttproject.sf.net/">
     <head>
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>GanttProject - Projet_Arrosage_html</title>
-        <link rel="stylesheet" href="style.css">
+        <title>GanttProject - Projet_Arrosage_raphael</title>
+        <style>
+	    A:link {
+		FONT-WEIGHT: bold;  TEXT-DECORATION: none;
+		FONT-SIZE: 14px ; COLOR: black;
+	    }
+	    A:visited {
+		FONT-WEIGHT: bold;  TEXT-DECORATION: none;
+		FONT-SIZE: 14px ; COLOR: black; BACKGROUND: none
+	    }
+	    A:hover {
+		FONT-WEIGHT: bold;  TEXT-DECORATION: none;
+		FONT-SIZE: 14px ; COLOR: white ; BACKGROUND: #6d9ec6;
+	    }
+	    .notes {
+	      padding-left: 10px;
+	    }
+	    .notes pre {
+	      font-family: Arial, Helvetica;
+	      font-size: 10px;
+	      margin-top: 0px;
+	      padding-top: 0px;
+	      margin-bottom: 5px;
+	    }
+	    .attachment {
+	      padding-left: 10px;
+	    }
+	    .attachment a:link {
+	      font-weight: normal;
+	      font-size: 12px;
+	      color: #6d9ec6;
+	      background: white;
+	    }
+	    .attachment a:hover {
+	      font-weight: normal;
+	      text-decoration: underline;
+	      font-size: 12px;
+	      color: #6d9ec6;
+	      background: white;
+	    }
+	    .attachment a:visited {
+	      font-weight: normal;
+	      font-size: 12px;
+	      background: white;
+	      color: gray;
+	    }
+	    TD {
+		FONT-SIZE: 12px; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+	    }
+	    UL {
+		FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+	    }
+	    LI {
+		FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+	    }
+	    H1 {
+		FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #6d9ec6;
+	    }
+	    H2 {
+		FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #000000;
+	    }
+	    H3 {
+		FONT-WEIGHT: bold; FONT-SIZE: 13pt; COLOR: #6d9ec6;
+	    }
+	    H4 {
+		FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #000000;
+	    }
+	    H5 {
+		FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #6d9ec6;
+	    }
+	    H6 {
+		FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000
+	    }
+
+	    </style>
     </head>
     <body bgcolor="white">
         <center>
+            <style>
+div.project_name {
+  font-size: 150%;
+  color: black;
+  font-weight: bold;
+  border-top: solid #6d9ec6 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+}
+div.page_links {
+  background: #6d9ec6;
+  text-align: center;
+}
+</style>
             <center>
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tr class="ligne_sujet">
+                    <tr>
                         <td bgcolor="#dddddd">
                             <div class="project_name">Projet d'arrosage</div>
                         </td>
                     </tr>
-                    <tr class="ligne_sujet">
+                    <tr>
                         <td>
                             <div class="page_links">
-                                <a href="Projet_Arrosage_html.html"></a>  |
-          <a href="Projet_Arrosage_html-chart.html">Diagramme de Gantt</a> |
-          <a href="Projet_Arrosage_html-tasks.html">T&acirc;ches</a> |
-          <a href="Projet_Arrosage_html-resources.html">Ressources</a>
+                                <a href="Projet_Arrosage_raphael.html"></a>  |
+          <a href="Projet_Arrosage_raphael-chart.html">Diagramme de Gantt</a> |
+          <a href="Projet_Arrosage_raphael-tasks.html">T&acirc;ches</a> |
+          <a href="Projet_Arrosage_raphael-resources.html">Ressources</a>
                             </div>
                         </td>
                     </tr>
                 </table>
             </center>
             <br>
+            <style>
+td.header {
+  background: #dddddd;
+  margin: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-bottom:1px;
+  border-bottom: solid black 2px;
+}
+td.cell {
+  margin: 0;
+  margin-top: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-bottom:1px;
+}
+div.cell {
+}
+h5.header {
+  margin-left: 2px;
+  margin-top: 2px;
+}
+</style>
             <table border="0" cellpadding="0" cellspacing="0">
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="header">
                         <h5 class="header">Nom</h5>
                     </td><td valign="top" class="header">
@@ -38,7 +151,7 @@
                         <h5 class="header">Ressources</h5>
                     </td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0em">
                             <div style="margin: 0; padding: 0; text-align: ;">Recherche des solutions</div>
@@ -47,9 +160,15 @@
 
 Trouver differents types d'arrosages automatiques
 
+
+
 Methodes:
 
 On cr&eacute;ait une carte mentale qui regroupe les images, explications et une vid&eacute;o pour chaque vid&eacute;o
+
+
+
+
 
 Conclusion:
 
@@ -69,7 +188,7 @@ On a trouver 7 types d'arrosage automatiques differents</pre>
                         </div>
                     </td><td valign="top" class="cell">Raphael, Elouan</td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0em">
                             <div style="margin: 0; padding: 0; text-align: ;">Jalon recherche des solutions</div>
@@ -84,16 +203,26 @@ On a trouver 7 types d'arrosage automatiques differents</pre>
                         </div>
                     </td><td valign="top" class="cell"></td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0em">
                             <div style="margin: 0; padding: 0; text-align: ;">Analyse besoins</div>
                             <div class="notes">
-                                <pre width="40">
+                                <pre width="40">28/11/2025
+
 
 Objectifs: Trouver une solution pour arroser des plantes dans des pots de fleurs en interieur.
 
+
+
+
+
 M&eacute;thode: On fait un croquit sur les solutions trouver , l'id&eacute;e qu'on a trouver est d'installer un r&eacute;servoir entre la terre et le pot avec un bouchon pour le remplir d'eau.Ensuite un capteur d'humidit&eacute; va detecter la temp&eacute;rature et l'humidit&eacute; de la terre et ce qui va envoyer des gouttes d'eau dans la terre avec de fin tuyaux pour ne pas noyer la plante.
+
+
+
+
+
 
 Conclusion:On a trouver une solution pour arroser les plantes en interieur </pre>
                             </div>
@@ -111,10 +240,10 @@ Conclusion:On a trouver une solution pour arroser les plantes en interieur </pre
                         </div>
                     </td><td valign="top" class="cell">Raphael, Elouan</td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0em">
-						   <div style="margin: 0; padding: 0; text-align: ;">Jalon analyse besoins</div>
+                            <div style="margin: 0; padding: 0; text-align: ;">Jalon analyse besoins</div>
                         </div>
                     </td><td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0.5em">
@@ -126,7 +255,7 @@ Conclusion:On a trouver une solution pour arroser les plantes en interieur </pre
                         </div>
                     </td><td valign="top" class="cell"></td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0em">
                             <div style="margin: 0; padding: 0; text-align: ;">Croquis</div>
@@ -146,7 +275,7 @@ Conclusion:On a trouver une solution pour arroser les plantes en interieur </pre
 -Cable Grove</pre>
                             </div>
                             <div class="attachment">
-                                <a href="https://github.com/raphael869/Projet_Arrosage/blob/main/Image Croquis.jpeg" class="attachment">https://github.com/raphael869/Projet_Arrosage/blob/main/Image Croquis.jpeg</a>
+                                <a href="https://raw.githubusercontent.com/raphael869/Projet_Arrosage/refs/heads/main/Image Croquis.jpeg" class="attachment">https://raw.githubusercontent.com/raphael869/Projet_Arrosage/refs/heads/main/Image Croquis.jpeg</a>
                             </div>
                         </div>
                     </td><td valign="top" class="cell">
@@ -159,7 +288,7 @@ Conclusion:On a trouver une solution pour arroser les plantes en interieur </pre
                         </div>
                     </td><td valign="top" class="cell"></td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0em">
                             <div style="margin: 0; padding: 0; text-align: ;">Prototypage</div>
@@ -174,7 +303,7 @@ Conclusion:On a trouver une solution pour arroser les plantes en interieur </pre
                         </div>
                     </td><td valign="top" class="cell">Raphael, Elouan</td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0.5em">
                             <div style="margin: 0; padding: 0; text-align: ;">Mod&eacute;lisation 3D</div>
@@ -195,13 +324,13 @@ Conclusion:On a trouver une solution pour arroser les plantes en interieur </pre
                         </div>
                     </td><td valign="top" class="cell">Elouan</td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0.5em">
                             <div style="margin: 0; padding: 0; text-align: ;">Vittascience</div>
                             <div class="notes">
                                 <pre width="40">Programme au format organigramme avec le lien ci-dessous:
-https://github.com/raphael869/Projet_Arrosage/blob/main/Diagramme</pre>
+"C:\Users\ordi2403918\Documents\STI2D\IT\Projet_Arrosage\Diagramme"</pre>
                             </div>
                             <div class="attachment">
                                 <a href="https://fr.vittascience.com/microbit/?mode=blocks&amp;console=bottom&amp;toolbox=vittascience&amp;localId=loc649e831a682f40" class="attachment">https://fr.vittascience.com/microbit/?mode=blocks&amp;console=bottom&amp;toolbox=vittascience&amp;localId=loc649e831a682f40</a>
@@ -217,7 +346,7 @@ https://github.com/raphael869/Projet_Arrosage/blob/main/Diagramme</pre>
                         </div>
                     </td><td valign="top" class="cell">Raphael</td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0em">
                             <div style="margin: 0; padding: 0; text-align: ;">Jalon prototypage</div>
@@ -232,7 +361,7 @@ https://github.com/raphael869/Projet_Arrosage/blob/main/Diagramme</pre>
                         </div>
                     </td><td valign="top" class="cell"></td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0em">
                             <div style="margin: 0; padding: 0; text-align: ;">Impression des pi&egrave;ces</div>
@@ -244,7 +373,7 @@ https://github.com/raphael869/Projet_Arrosage/blob/main/piece%206.PNG
 https://github.com/raphael869/Projet_Arrosage/blob/main/le%20pooot.PNG</pre>
                             </div>
                             <div class="attachment">
-                                <a href="https://github.com/raphael869/Projet_Arrosage/blob/main/boitte a ttt.PNG" class="attachment">https://github.com/raphael869/Projet_Arrosage/blob/main/boitte a ttt.PNG</a>
+                                <a href="https://raw.githubusercontent.com/raphael869/Projet_Arrosage/refs/heads/main/boitte a ttt.PNG" class="attachment">https://raw.githubusercontent.com/raphael869/Projet_Arrosage/refs/heads/main/boitte a ttt.PNG</a>
                             </div>
                         </div>
                     </td><td valign="top" class="cell">
@@ -257,7 +386,7 @@ https://github.com/raphael869/Projet_Arrosage/blob/main/le%20pooot.PNG</pre>
                         </div>
                     </td><td valign="top" class="cell">Elouan</td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0em">
                             <div style="margin: 0; padding: 0; text-align: ;">Jalon impression</div>
@@ -272,7 +401,7 @@ https://github.com/raphael869/Projet_Arrosage/blob/main/le%20pooot.PNG</pre>
                         </div>
                     </td><td valign="top" class="cell"></td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0em">
                             <div style="margin: 0; padding: 0; text-align: ;">Test</div>
@@ -280,7 +409,7 @@ https://github.com/raphael869/Projet_Arrosage/blob/main/le%20pooot.PNG</pre>
                                 <pre width="40">Le Test si le projet d'arrosage fonctionne: malgr&egrave;s un faible d&eacute;bit d'eau, le goutte &agrave; goutte arrose bien la plante.</pre>
                             </div>
                             <div class="attachment">
-                                <a href="https://github.com/raphael869/Projet_Arrosage/blob/main/2026-02-06 12h43  Enregistrement vid%C3%A9o.mp4" class="attachment">https://github.com/raphael869/Projet_Arrosage/blob/main/2026-02-06 12h43  Enregistrement vid&eacute;o.mp4</a>
+                                <a href="https://raphael869.github.io/Projet_Arrosage/video.mp4" class="attachment">https://raphael869.github.io/Projet_Arrosage/video.mp4</a>
                             </div>
                         </div>
                     </td><td valign="top" class="cell">
@@ -293,7 +422,7 @@ https://github.com/raphael869/Projet_Arrosage/blob/main/le%20pooot.PNG</pre>
                         </div>
                     </td><td valign="top" class="cell">Raphael, Elouan</td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0em">
                             <div style="margin: 0; padding: 0; text-align: ;">Jalon Test</div>
@@ -308,7 +437,7 @@ https://github.com/raphael869/Projet_Arrosage/blob/main/le%20pooot.PNG</pre>
                         </div>
                     </td><td valign="top" class="cell"></td>
                 </tr>
-                <tr class="ligne_sujet">
+                <tr>
                     <td valign="top" class="cell">
                         <div style="margin:0; padding:0; padding-left:0em">
                             <div style="margin: 0; padding: 0; text-align: ;">Fin du projet</div>
@@ -316,7 +445,7 @@ https://github.com/raphael869/Projet_Arrosage/blob/main/le%20pooot.PNG</pre>
                                 <pre width="40">Le rendu final de l'arrosage automatique</pre>
                             </div>
                             <div class="attachment">
-                                <a href="https://github.com/raphael869/Projet_Arrosage/blob/main/IMG_0788.mov" class="attachment">https://github.com/raphael869/Projet_Arrosage/blob/main/IMG_0788.mov</a>
+                                <a href="https://raphael869.github.io/Projet_Arrosage/IMG_0788.mp4" class="attachment">https://raphael869.github.io/Projet_Arrosage/IMG_0788.mp4</a>
                             </div>
                         </div>
                     </td><td valign="top" class="cell">
@@ -333,10 +462,10 @@ https://github.com/raphael869/Projet_Arrosage/blob/main/le%20pooot.PNG</pre>
         </center>
         <br>
         <table width="100%" border="0" cellpadding="0" cellspacing="0">
-            <tr class="ligne_sujet">
+            <tr>
                 <td bgcolor="#6d9ec6" width="50%"><font color="#FFFFFF"><b>Ganttproject (3.3.3316)</b></font></td><td bgcolor="#6d9ec6" width="50%" align="right"><b><a href="http://ganttproject.biz">ganttproject.biz</a></b>
                     <br>
-                    <b>10/02/2026 - 10:36:54</b></td>
+                    <b>12/02/2026 - 09:41:04</b></td>
             </tr>
         </table>
     </body>
